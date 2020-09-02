@@ -21,34 +21,16 @@
 //                 |         |
 
 // Semafori auto
-#define S1_GREEN_PORT    GPIOA
-#define S1_GREEN_PIN     5U
-#define S1_GREEN_LINE    PAL_LINE( S1_GREEN_PORT, S1_GREEN_PIN )
-#define S1_RED_PORT      GPIOA
-#define S1_RED_PIN       6U
-#define S1_RED_LINE      PAL_LINE( S1_BLU_PORT, S1_BLU_PIN )
-
-#define S2_GREEN_PORT    GPIOA
-#define S2_GREEN_PIN     7U
-#define S2_GREEN_LINE    PAL_LINE( S2_GREEN_PORT, S2_GREEN_PIN )
-#define S2_RED_PORT      GPIOB
-#define S2_RED_PIN       6U
-#define S2_RED_LINE      PAL_LINE( S2_BLU_PORT, S2_BLU_PIN )
+#define S1_GREEN_LINE    PAL_LINE( GPIOA, 5U )
+#define S1_RED_LINE      PAL_LINE( GPIOA, 6U )
+#define S2_GREEN_LINE    PAL_LINE( GPIOA, 7U )
+#define S2_RED_LINE      PAL_LINE( GPIOB, 6U )
 
 // Pedoni (Pin con modalità PWM)
-#define P1_GREEN_PORT    GPIOC
-#define P1_GREEN_PIN     7U
-#define P1_GREEN_LINE    PAL_LINE( P1_GREEN_PORT, P1_GREEN_PIN )
-#define P1_RED_PORT      GPIOB
-#define P1_RED_PIN       10U
-#define P1_RED_LINE      PAL_LINE( P1_BLU_PORT, P1_BLU_PIN )
-
-#define P2_GREEN_PORT    GPIOB
-#define P2_GREEN_PIN     4U
-#define P2_GREEN_LINE    PAL_LINE( P2_GREEN_PORT, P2_GREEN_PIN )
-#define P2_RED_PORT      GPIOB
-#define P2_RED_PIN       3U
-#define P2_RED_LINE      PAL_LINE( P2_BLU_PORT, P2_BLU_PIN )
+#define P1_GREEN_LINE    PAL_LINE( GPIOC, 7U )
+#define P1_RED_LINE      PAL_LINE( GPIOB, 10U )
+#define P2_GREEN_LINE    PAL_LINE( GPIOB, 4U )
+#define P2_RED_LINE      PAL_LINE( GPIOB, 3U )
 
 // Bottoni
 // TODO da definire tutti
